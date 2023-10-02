@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cvo-vW-T4g">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="World_flags_game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMc-Vh-yh9">
+                                <rect key="frame" x="83" y="100" width="224" height="114"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Andorra"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IC6-0O-d3c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjl-hx-LGo">
+                                <rect key="frame" x="83" y="244" width="224" height="114"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Andorra"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gQu-o8-vYW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNa-6U-M90">
+                                <rect key="frame" x="83" y="388" width="224" height="114"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Andorra"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cOl-Vv-mVK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWs-EH-PIm" userLabel="Button4">
+                                <rect key="frame" x="83" y="532" width="224" height="114"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Andorra"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wIT-mZ-xYt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7k-eh-OKT">
+                                <rect key="frame" x="120" y="720" width="150" height="70"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Yu3-is-7Vh"/>
+                                    <constraint firstAttribute="height" constant="70" id="dVI-kW-meh"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hnI-sR-ZFs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.84598554664595249" green="0.83346889442968641" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pjl-hx-LGo" firstAttribute="centerX" secondItem="oMc-Vh-yh9" secondAttribute="centerX" id="6Ae-k0-XCY"/>
+                            <constraint firstItem="tNa-6U-M90" firstAttribute="top" secondItem="Pjl-hx-LGo" secondAttribute="bottom" constant="30" id="8nh-lq-CZN"/>
+                            <constraint firstItem="oMc-Vh-yh9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="HBH-Re-ZGk"/>
+                            <constraint firstItem="Pjl-hx-LGo" firstAttribute="top" secondItem="oMc-Vh-yh9" secondAttribute="bottom" constant="30" id="IzZ-bo-PSu"/>
+                            <constraint firstItem="H7k-eh-OKT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rpi-fR-tqV"/>
+                            <constraint firstItem="tNa-6U-M90" firstAttribute="centerX" secondItem="Pjl-hx-LGo" secondAttribute="centerX" id="Tcq-2w-hmP"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="H7k-eh-OKT" secondAttribute="bottom" constant="20" id="cGq-EQ-Rra"/>
+                            <constraint firstItem="DWs-EH-PIm" firstAttribute="top" secondItem="tNa-6U-M90" secondAttribute="bottom" constant="30" id="e3y-lA-G4h"/>
+                            <constraint firstItem="DWs-EH-PIm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rI0-1M-Maa"/>
+                            <constraint firstItem="oMc-Vh-yh9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ugR-nj-N1D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sKQ-rv-Fmc"/>
+                    <connections>
+                        <outlet property="button1" destination="oMc-Vh-yh9" id="EBH-4h-UFr"/>
+                        <outlet property="button2" destination="Pjl-hx-LGo" id="zZO-JL-G6n"/>
+                        <outlet property="button3" destination="tNa-6U-M90" id="8Vq-8e-y54"/>
+                        <outlet property="button4" destination="DWs-EH-PIm" id="kg0-vA-YAT"/>
+                        <outlet property="nextButton" destination="H7k-eh-OKT" id="N57-xA-B9V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909.23076923076917" y="-28.436018957345969"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MKi-eT-E30">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cvo-vW-T4g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L2D-Rw-Owp">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hfl-Qx-Yhf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SFV-rg-NI5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20" y="-28.436018957345969"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Andorra" width="200" height="100"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
